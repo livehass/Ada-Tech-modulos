@@ -4,6 +4,7 @@
     --fonte-padrao:       'Poppins', Josefin Sans;
     --cor-de-fundo:      #454545;
     --cor-texto-padrao:  #e0e0e0;
+    --cor-fundo-ancora:  #0b7ca4;
 }
 
 body {
@@ -13,14 +14,35 @@ body {
     color: var(--cor-texto-padrao);
     font-family: var(--fonte-padrao);
     font-weight: 600;
+    max-width: 100%;
+    max-height: 100%;
 }
-.container-paragrafo  {
-    width: 100%;
+.cabeçalho {
     display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: 0% 20% 0 20%;
+}
+.cabeçalho__lista {
+    display: flex;
+    justify-content: spa;
+}
+.cabeçalho__imagem {
+    width: 20%;
+    border: solid var(--cor-de-fundo);
+    border-radius: 40px; 
+}
+.cabeçalho__lista-item, .ancora {
+    text-decoration: none;
+    list-style: none 
     
 }
-.paragrafo {
-    text-align: center;
-    margin: 10% 20% 3% 20%;
-}
+.ancora {
+    text-transform: uppercase;
+    color: var(--cor-texto-padrao);
+    background-color: var(--cor-fundo-ancora);
+    padding: 0.5em;
+    border-radius: 10px;
 
+}
