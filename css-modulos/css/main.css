@@ -12,4 +12,14 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--cor-texto-padrao);
     font-family: var(--fonte-padrao);
+    font-weight: 600;
+}
+.container-paragrafo  {
+    width: 100%;
+    display: flex;
+    
+}
+.paragrafo {
+    text-align: center;
+    margin: 10% 20% 3% 20%;
 }
