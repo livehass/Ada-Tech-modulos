@@ -3,3 +3,6 @@
 :root {
     --fonte-padrao:  'Poppins', Josefin Sans;
 }
+html {
+    background-color: #454545;
+}
