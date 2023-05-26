@@ -34,6 +34,7 @@ body {
 .cabeçalho__lista {
     display: flex;
     align-items: center;
+    
 }
 .cabeçalho__imagem {
     width: 5em;
@@ -88,6 +89,7 @@ body {
 }
 .div__imagens {
     padding: 0 4px 0 0;
+    margin: 1em;
     
 }
 .imagem {
@@ -95,6 +97,10 @@ body {
     border-radius: 10px;
     border: solid   var(--cor-fundo);
     box-shadow: 5px 5px 4px 5px rgba(0, 0, 0, 0.25);
+    
+}
+.image__svg {
+    background-color: #A6120D;
 }
 .rodapé {
     display: flex;
