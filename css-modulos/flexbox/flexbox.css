@@ -5,11 +5,17 @@ p {
 body{
     background-color: darkslategrey;
 }
+main {
+    padding: 7rem 0;
+}
 .boxes {
-    /* height: calc(100vh - 14rem); */
+    height: calc(100vh - (7 * 2rem)) ;
     position: relative;
     display: flex;
-    flex-flow: row wrap;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    justify-content: center;
 }
 .box {
     text-align: center;
