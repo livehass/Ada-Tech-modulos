@@ -71,6 +71,7 @@ body {
 .imagem {
     width: 200px;
     border-radius: 10px;
+    border: solid   var(--cor-texto-padrao);
 }
 .rodapé {
     display: flex;
