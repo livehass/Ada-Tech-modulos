@@ -2,9 +2,9 @@
 
 :root {
     --fonte-padrao:       'Poppins', Josefin Sans;
-    --cor-de-fundo:      #454545;
     --cor-texto-padrao:  #e0e0e0;
-    --cor-fundo-ancora:  #06445a;
+    --cor-fundo-ancora:  rgba(207, 52, 56, 0.2);
+    --cor-fundo:         rgba(207, 52, 56, 0.4);    
 }
 html{
     width: 100%;
@@ -16,17 +16,13 @@ html{
     background-repeat: repeat;
     background-size: contain;
     background-size: auto 100%;
-    animation: animatedBackground 500s linear infinite;
-    
+    animation: animatedBackground 400s linear infinite;  
 }
 body {
-    margin: 0;
-    padding: 0;
     color: var(--cor-texto-padrao);
     font-family: var(--fonte-padrao);
     font-weight: 600;
-    max-width: 100%;
-    max-height: 100%;
+
 }
 .cabeçalho {
     margin-top: 0.2em;
@@ -41,11 +37,15 @@ body {
 }
 .cabeçalho__imagem {
     width: 5em;
-    border-radius: 10px;
+    border-radius: 40px ;
+    border: solid var(--cor-fundo);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 .cabeçalho__lista-item {
     padding: 0;
     margin: 0;
+    
 }
 .ancora {
     text-decoration: none;
@@ -54,62 +54,73 @@ body {
     color: var(--cor-texto-padrao);
     background-color: var(--cor-fundo-ancora);
     padding: 0.5em;
+    border: solid var(--cor-fundo);
     border-radius: 10px;
     margin: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .container-paragrafo{
    display: flex;
+   
 }
 .paragrafo{
     display: flex;
     margin: 0% 20% 0 20%;
-    padding: 2%;
+    padding: 4%;
+    color: rgba(255, 255, 255, 0.6);
 }
 .titulo__imagens {
     display: flex;
     justify-content: center;
-    background-color: var(--cor-fundo-ancora);
     padding: 1em;
     margin-bottom: 1em;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
+    
+    
 }
 .section__imagens {
     display: flex;
     justify-content: center;
+    
+    
 }
 .div__imagens {
     padding: 0 4px 0 0;
+    
 }
 .imagem {
     width: 100px;
     border-radius: 10px;
-    border: solid   var(--cor-texto-padrao);
+    border: solid   var(--cor-fundo);
+    box-shadow: 5px 5px 4px 5px rgba(0, 0, 0, 0.25);
 }
 .rodapé {
     display: flex;
     justify-content: space-around;
-    background-color: var(--cor-fundo-ancora);
+    color: rgba(250, 247, 247, 0.5);
+    background-color: rgba(207, 52, 56, 0.2);
     padding: 1em;
-    margin-top: 1em ;
+    margin: 1em ;
 }
 .rodapé__titulo {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    
+  
 }
 .ancora__rodapé {
     text-decoration: none;
-    color: var(--cor-de-fundo);
-
+    color: var(--cor-texto-padrao);
+    padding-left: 0.5em;
+    
 }
 @keyframes animatedBackground {
     from {
       background-position: 0 0;
     }
     to {
-      background-position: -10000px 0;
+      background-position: -1000px 0;
     }
 }
 
