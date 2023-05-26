@@ -19,14 +19,11 @@ body {
 }
 .cabeçalho {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: ce;
     text-align: center;
     align-items: center;
-    margin: 0% 20% 0 20%;
-}
-.cabeçalho__lista {
-    display: flex;
-    justify-content: spa;
+    margin: 0% 20% 0% 20%;
+    gap: 2%;
 }
 .cabeçalho__imagem {
     width: 20%;
