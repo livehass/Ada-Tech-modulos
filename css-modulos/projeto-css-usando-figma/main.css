@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@500&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --fonte-primaria:       'Poppins', sans-serif;
     --fonte-segundaria:     'Roboto', sans-serif;
     --cor-destaque:         #FF5678;
     --cor-preto-padrao:     #000000;
     --cor-botao:            #35E6E9;
+     font-size: 62.5;       /*com base no calculo *10 */
 }
 
 aside h1 {
@@ -19,6 +25,12 @@ aside h1 span{
 main {
     width: 600px;
     height: 520px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.95);
     border-radius: 12px;
+}
+main h2 {
+    max-width: 430px;
+    font-family: var(--fonte-segundaria);
+    font-weight: 500;
+    font-size: 36px;
 }
