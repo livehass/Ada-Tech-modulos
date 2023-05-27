@@ -120,7 +120,13 @@ main form input {
     border: var(--borda-padrao);
     border-radius: var(--raio-padrao-bordas);
 }
+/*posição também para alinhar o botão de +*/
+main form .poits {
+    position: relative;
+}
 main form input + button {
     position: absolute;
-    right: 0; /*sempre que ultilizamos posição absoluda, o elemento filho a caixa principal precisa ser relativa*/
+    right: 2.7rem; /*sempre que ultilizamos posição absoluda, o elemento filho a caixa principal precisa ser relativa*/
+    top: 2.7rem;
+
 }
