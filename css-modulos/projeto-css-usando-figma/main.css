@@ -11,15 +11,18 @@
     --cor-destaque:         #FF5678;
     --cor-preto-padrao:     #000000;
     --cor-botao:            #35E6E9;
-     font-size: 62.5%;       /*com base no calculo *10 para ultlizar o rem,*/
+    font-size: 62.5%;       /*com base no calculo *10 para ultlizar o rem,*/
+}
+body {
+    font-family: var(--fonte-segundaria);
+    font-size: 1.6rem;
 }
 
 aside h1 {
-    font-family: var(--fonte-segundaria);
     font-weight: 500;
     font-size: 6.4rem;
 }
-aside h1 span{
+aside h1 span, main h2 span{
     color: var(--cor-destaque);
 }
 main {
@@ -30,7 +33,13 @@ main {
 }
 main h2 {
     max-width: 43rem;
-    font-family: var(--fonte-segundaria);
     font-weight: 500;
     font-size: 3.6rem;
+}
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+main .actions a:first-child{
+    background-color: var(--cor-botao);
 }
