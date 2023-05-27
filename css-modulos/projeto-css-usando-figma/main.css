@@ -18,7 +18,22 @@ body {
     font-family: var(--fonte-segundaria);
     font-size: 1.4rem;
 }
-
+.content {
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form ."
+        ". . . . ."
+    ;
+    gap: 8.5rem;
+}
+main {
+    grid-area: form;
+}
+aside {
+    grid-area: hero;
+}
 aside h1 {
     font-weight: 500;
     font-size: 6.4rem;
@@ -29,9 +44,10 @@ aside h1 span, main h2 span{
 main {
     width: 60rem;
     height: 52rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.95);
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     padding: 4.7rem 5.7rem;
+    border-radius: 1.2rem;
 }
 main h2 {
     max-width: 43rem;
@@ -64,6 +80,7 @@ main footer p {
     margin-bottom: 0.9rem ;
 }
 main footer a {
+    display: block;
     font-size: 1.8rem;
     text-decoration: underline;
     color: var(--cor-preto-padrao);
