@@ -10,13 +10,14 @@
     --fonte-segundaria:     'Roboto', sans-serif;
     --cor-destaque:         #FF5678;
     --cor-preto-padrao:     #000000;
-    --cor-botao:            #35E6E9;
+    --cor-botao:            #055052;
     --cor-texto:            #FFFFFF;
     --borda-padrao:         0.1rem solid rgba(0, 0, 0, 0.15);
-    --raio-padrao-bordas:   .2rem;
+    --raio-padrao-bordas:   1.2rem;
     font-size: 62.5%;       /*com base no calculo *10 para ultlizar o rem,*/
 }
 body {
+    background-color: cadetblue; /*cor temporaria*/
     font-family: var(--fonte-segundaria);
     font-size: 1.4rem;
 }
@@ -52,6 +53,7 @@ main {
     border-radius: 12px;
     padding: 4.7rem 5.7rem;
     border-radius: var(--raio-padrao-bordas);
+    position: relative; /*posição relativa para ultilizar o right e absoluta no botão*/
 }
 main h2 {
     max-width: 43rem;
@@ -79,6 +81,15 @@ main .actions a + a {
     background-color: var(--cor-destaque);
     margin-top: 4.8rem;
 }
+main header {
+    display: flex;
+    gap: 0 1.8rem;
+    align-items: center;
+}
+main header i {
+    font-size: 2.4rem;
+    color: var(--cor-destaque);
+}
 main footer p {
     font-size: 1.6rem;
     margin-bottom: 0.9rem ;
@@ -94,9 +105,22 @@ main footer {
     margin-top: 7.9rem;
     text-align: center;
 }
+main form {
+    margin-top: 1.6rem;
+}
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    display: block; /*o label anteriormente era inline e não respeitava o margin  */
+}
 main form input {
     width: 49rem;
     height: 5.5rem;
     border: var(--borda-padrao);
     border-radius: var(--raio-padrao-bordas);
+}
+main form input + button {
+    position: absolute;
+    right: 0; /*sempre que ultilizamos posição absoluda, o elemento filho a caixa principal precisa ser relativa*/
 }
