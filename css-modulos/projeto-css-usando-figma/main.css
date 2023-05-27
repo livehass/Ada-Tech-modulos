@@ -11,11 +11,12 @@
     --cor-destaque:         #FF5678;
     --cor-preto-padrao:     #000000;
     --cor-botao:            #35E6E9;
+    --cor-texto:            #FFFFFF;
     font-size: 62.5%;       /*com base no calculo *10 para ultlizar o rem,*/
 }
 body {
     font-family: var(--fonte-segundaria);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 aside h1 {
@@ -30,6 +31,7 @@ main {
     height: 52rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.95);
     border-radius: 12px;
+    padding: 4.7rem 5.7rem;
 }
 main h2 {
     max-width: 43rem;
@@ -40,6 +42,34 @@ main .actions {
     display: flex;
     flex-flow: column wrap;
 }
-main .actions a:first-child{
+main .actions a {
+    border-radius: 1.2rem;
+    text-decoration: none;
+    height: 5.5rem;
+    font-size: 2.4rem;
     background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    margin-top: 6.3rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .actions a + a {
+    background-color: var(--cor-destaque);
+    margin-top: 4.8rem;
+}
+main footer p {
+    font-size: 1.6rem;
+    margin-bottom: 0.9rem ;
+}
+main footer a {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: var(--cor-preto-padrao);
+    
+}
+main footer {
+    margin-top: 7.9rem;
+    text-align: center;
 }
