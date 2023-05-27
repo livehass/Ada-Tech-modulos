@@ -13,6 +13,7 @@
     --cor-botao:            #35E6E9;
     --cor-texto:            #FFFFFF;
     --borda-padrao:         0.1rem solid rgba(0, 0, 0, 0.15);
+    --raio-padrao-bordas:   .2rem;
     font-size: 62.5%;       /*com base no calculo *10 para ultlizar o rem,*/
 }
 body {
@@ -50,7 +51,7 @@ main {
     border: var(--borda-padrao);
     border-radius: 12px;
     padding: 4.7rem 5.7rem;
-    border-radius: 1.2rem;
+    border-radius: var(--raio-padrao-bordas);
 }
 main h2 {
     max-width: 43rem;
@@ -62,7 +63,7 @@ main .actions {
     flex-flow: column wrap;
 }
 main .actions a {
-    border-radius: 1.2rem;
+    border-radius: var(--raio-padrao-bordas);
     text-decoration: none;
     height: 5.5rem;
     font-size: 2.4rem;
@@ -97,5 +98,5 @@ main form input {
     width: 49rem;
     height: 5.5rem;
     border: var(--borda-padrao);
-    border-radius: 1.2rem;
+    border-radius: var(--raio-padrao-bordas);
 }
