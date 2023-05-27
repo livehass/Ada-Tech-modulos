@@ -12,6 +12,7 @@
     --cor-preto-padrao:     #000000;
     --cor-botao:            #35E6E9;
     --cor-texto:            #FFFFFF;
+    --borda-padrao:         0.1rem solid rgba(0, 0, 0, 0.15);
     font-size: 62.5%;       /*com base no calculo *10 para ultlizar o rem,*/
 }
 body {
@@ -46,7 +47,7 @@ aside h1 span, main h2 span{
 main {
     width: 60rem;
     height: 52rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border: var(--borda-padrao);
     border-radius: 12px;
     padding: 4.7rem 5.7rem;
     border-radius: 1.2rem;
@@ -91,4 +92,10 @@ main footer a {
 main footer {
     margin-top: 7.9rem;
     text-align: center;
+}
+main form input {
+    width: 49rem;
+    height: 5.5rem;
+    border: var(--borda-padrao);
+    border-radius: 1.2rem;
 }
