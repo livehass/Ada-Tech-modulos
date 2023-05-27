@@ -3,5 +3,8 @@
 :root {
     --fonte-primaria:       'Poppins', sans-serif;
     --fonte-segundaria:     'Roboto', sans-serif;
-
+    --cor-principal:        #FF5678;
+    --cor-preto-padrao:     #000000;
+    --cor-botao:            #35E6E9;
 }
+
