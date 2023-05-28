@@ -1,5 +1,9 @@
-
-
 const input = require('readline-sync')
 
-const nota1 = Number(input.question('informe a novata 1:'))
+let nota;
+let soma = 0;
+for (let i = 1; i <= 3; i++){
+    nota = Number(input.question(`informe sua nota ${i} do aluno:`))
+    soma = soma + nota
+}
+console.log(soma);
