@@ -6,4 +6,4 @@ for (let i = 1; i <= 3; i++){
     nota = Number(input.question(`informe sua nota ${i} do aluno:`))
     soma = soma + nota
 }
-console.log(soma);
+console.log(`A média do aluno é ${soma / 3}.`);
