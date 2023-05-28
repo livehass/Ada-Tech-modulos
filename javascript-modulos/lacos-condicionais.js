@@ -41,3 +41,11 @@ console.log("depois", arr2);
 arr2.unshift(60) //unshift joga o numero do array no começo
 
 console.log("depois de unshift", arr2);
+
+arr2.pop() // por padrão remove o ultimo
+
+//para pegar o elemento removido
+const elementoRemovido = arr2.pop()
+
+//oposto do pop é o shift remove o primeiro elemento
+arr2.shift()
