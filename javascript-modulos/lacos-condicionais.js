@@ -53,4 +53,27 @@ arr2.shift()
 //jutar 2 arrays
 
 arr1.concat(arr2)
-console.log(console.log("depois", arr2););
+console.log(console.log("depois", arr2));
+
+console.clear();
+//funções
+
+function saudacao(nome, curso) {
+    console.log(`ola ${nome} seja bem vindo ao curso de ${curso}`)
+}
+
+saudacao('felipe', "javascript")
+
+console.clear();
+
+function funcao(array) {
+    let acc = 0;
+  
+    for (let elemento of array) {
+      acc += elemento;
+    }
+  
+    return (acc / array.length);
+  }
+  
+  console.log(funcao([4, 6, 4, 2]));
