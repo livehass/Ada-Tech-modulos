@@ -49,3 +49,8 @@ const elementoRemovido = arr2.pop()
 
 //oposto do pop é o shift remove o primeiro elemento
 arr2.shift()
+
+//jutar 2 arrays
+
+arr1.concat(arr2)
+console.log(console.log("depois", arr2););
