@@ -114,12 +114,37 @@ main form label {
     margin-bottom: 1rem;
     display: block; /*o label anteriormente era inline e não respeitava o margin  */
 }
-main form input {
+main form :is(input,select){
     width: 49rem;
     height: 5.5rem;
     border: var(--borda-padrao);
     border-radius: var(--raio-padrao-bordas);
 }
+main form :is(select, option){
+    text-align: center;
+    font-family: var(--fonte-segundaria);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+} 
+main form select {
+    appearance: none;
+}
+main form .select__div {
+    position: relative;
+}
+main form .select__div::after {
+    top: 1.2rem;
+    right: 0;
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 1;
+
+}
+
 /*posição também para alinhar o botão de +*/
 main form .poits {
     position: relative;
