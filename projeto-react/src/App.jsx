@@ -1,22 +1,13 @@
-import MeuComponente from "./components/MeuComponente"
+import MeuContador from "./components/MeuContador";
 
-function App() {
+
+export default function App() {
   return (
     <div>
-      <h1>meu programa</h1>
-      <MeuComponente/>
-      <MeuBotao/>
+      <MeuContador/>
 
     </div>
     
 
   )
 }
-function MeuBotao(){
-  return (
-    <button>Clique Aqui</button>
-  )
-}
-
-
-export default App
